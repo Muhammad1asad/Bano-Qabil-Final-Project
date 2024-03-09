@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    
+    <div class="main-container">
+        <h1>Grocery store</h1>
+        <div class="input-div">
+            <div class="inner-input-div">
+                <input type="text" name="" id="user-input" placeholder="Add An Item">
+                <button class="btn" onclick="addItem()">Add Item</button>
+            </div>
+            <div class="inner-del-button">
+                <button onclick="deleteCheckedRecords()">Delete Checked Item</button>
+                <button onclick="deleteAllrecords()">Delete All Item</button>
+            </div>
+        </div>
+        <div class="listdiv">
+            <div class="Select-all" id="select-all-container">
+            <input type="checkbox">
+            <label for="">Select ALL</label>
+            </div>
+            <ul>
+                <li>
+                    <input type="checkbox">
+                    <span>item</span>
+                    <button>Delete</button>
+                </li>
+            </ul>
+        </div>
+        <div class="btn-div">
+            <button class="btn" onclick="showData('all')"></button>
+            <button class="btn" onclick="showData('purchased')"></button>
+            <button class="btn" onclick="showData('remaining')"></button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
